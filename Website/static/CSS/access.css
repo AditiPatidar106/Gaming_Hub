@@ -1,0 +1,22 @@
+.btn {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+  color:aqua;
+  justify-content: center;
+  background:none;
+  border: 3px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  font-weight: bolder;
+
+}
+.btn:hover {
+    color:azure !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: #19bc8b;
+    border-radius: 20px;
+    transition: all 0.3s ease 0s;
+    }
+
