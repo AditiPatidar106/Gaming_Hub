@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+ {% block content %}
+ <head>
+	 <style>
+		 .div-color{
+			background-image: linear-gradient(to right top, #6bd1b9, #6bd6b3, #5e35b1,
+			#536dfe, #2196f3, #00acc1,#26a69a, #cec856, #e2b850, #f1a854, #fb985f
+		);
+		height:600px;
+
+		 }
+		 .container-fluid{
+			 width:100%;
+		 }
+		 .card{
+			 background-color: #69f0ae;
+		 }
+		 .card-header{
+			 background-color: #69f0ae;
+		 }
+	 </style>
+ </head>
+<div class="container-fluid div-color ">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<div class="card mt-5">
+					<div class="card-header text-center text-black ">
+					<i class="fa fa-user fa-3x " aria-hidden="true"></i>
+					<h4>Login</h4>
+                     </div>
+                 <div class="card-body">
+						<form method="post">
+
+							<label>Enter Email </label>
+							<div class="form-group">
+
+								<input
+									type="email" class="form-control" id="email"
+									aria-describedby="emailHelp" placeholder="Enter email" name="email" Required="required">
+
+							</div>
+							<label>Create Password</label>
+							<div class="form-group">
+								<input
+									type="password" class="form-control" id="password"
+									placeholder="Password" name="password"  Required="required">
+							</div>
+
+							<button type="submit" class="btn btn-primary btn-block">Login</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+			
+{% endblock %}
